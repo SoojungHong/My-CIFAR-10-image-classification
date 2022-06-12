@@ -37,7 +37,6 @@ gpu = torch.device('cuda')
 
 # Model
 # --------------
-
 class Model(nn.Module):
     def __init__(self):
         super().__init__()
@@ -92,7 +91,6 @@ def criterion():
 
 # Optimizer
 # -------------
-
 def adam_optimizer_fn(model):
     learning_rate = 1e-6
     return optim.Adam(model.parameters(), lr=learning_rate)
