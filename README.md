@@ -25,16 +25,16 @@
 
 | Optimizer | Training Loss |
 |-----------|---------------|
-|  SGD        | ![](./plot/SGD_Train_Loss_BN_conv_Comparision_epoch10.png) |
-| Adam          | ![](./plot/ADAM_Loss_BN_Comparision.png) |
+|  SGD        | ![](./classification/plot/SGD_Train_Loss_BN_conv_Comparision_epoch10.png) |
+| Adam          | ![](./classification/plot/ADAM_Loss_BN_Comparision.png) |
 
 
 ### Accuracy
 
 | Optimizer |  Accuracy   |
 |-----------|---------------|
-|   SGD        | ![](./plot/SGD_Accu_BN_only_conv_Comparision_epoch10.png) |
-|   Adam    | ![](./plot/ADAM_BN_Accu_Comparision(1).png) |
+|   SGD        | ![](./classification/plot/SGD_Accu_BN_only_conv_Comparision_epoch10.png) |
+|   Adam    | ![](./classification/plot/ADAM_BN_Accu_Comparision(1).png) |
 
 
 
@@ -80,8 +80,8 @@ class BN_Model(nn.Module):
 I observed that the training with 10 epochs peaks the accuracy, although the training loss was continuously decreasing after epoch 10. 
 Therefore, the experiment is conduced with 10 epochs. 
 The following is the training loss and accuracy in training with epoch 30. 
-![](./plot/SGD_Train_Loss_BN_Comparision_epoch30.png)
-![](./plot/SGD_Accu_BN_Comparision.png)
+![](./classification/plot/SGD_Train_Loss_BN_Comparision_epoch30.png)
+![](./classification/plot/SGD_Accu_BN_Comparision.png)
 
 ### Future improvement 
 1. I will apply the learning rate scheduler. Therefore, the learning rate can be adapted during training. This will helps SGD moves stabler.
